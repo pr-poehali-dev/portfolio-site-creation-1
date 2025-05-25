@@ -53,7 +53,9 @@ const Index = () => {
       <header className="bg-black/80 backdrop-blur-sm border-b border-red-500/20 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <nav className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-red-400">Стас • Shrike</h1>
+            <h1 className="text-2xl font-bold text-red-400">
+              [Ваше Имя] • Developer
+            </h1>
             <div className="hidden md:flex space-x-8">
               <a
                 href="#about"
@@ -93,11 +95,12 @@ const Index = () => {
             </div>
           </div>
           <h2 className="text-5xl font-bold text-white mb-6">
-            Привет! Я <span className="text-red-400 animate-pulse">Стас</span>
+            Привет! Я{" "}
+            <span className="text-red-400 animate-pulse">[Ваше Имя]</span>
           </h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Fullstack разработчик с острым взглядом на код. Создаю надежные
-            цифровые решения, которые выдерживают любые нагрузки.
+            [Ваша специализация] с [X] годами опыта. Создаю качественные решения
+            для веб и мобильных платформ.
           </p>
           <div className="flex gap-4 justify-center">
             <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-red-500/25">
