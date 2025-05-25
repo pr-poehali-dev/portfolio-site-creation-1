@@ -48,34 +48,34 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-zinc-900">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b sticky top-0 z-50">
+      <header className="bg-black/80 backdrop-blur-sm border-b border-red-500/20 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <nav className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900">Портфолио</h1>
+            <h1 className="text-2xl font-bold text-red-400">Стас • Shrike</h1>
             <div className="hidden md:flex space-x-8">
               <a
                 href="#about"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-slate-300 hover:text-red-400 transition-colors"
               >
                 О себе
               </a>
               <a
                 href="#skills"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-slate-300 hover:text-red-400 transition-colors"
               >
                 Навыки
               </a>
               <a
                 href="#projects"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-slate-300 hover:text-red-400 transition-colors"
               >
                 Проекты
               </a>
               <a
                 href="#contact"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="text-slate-300 hover:text-red-400 transition-colors"
               >
                 Контакты
               </a>
@@ -85,29 +85,27 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary/10 to-purple-600/10 py-20">
+      <section className="bg-gradient-to-r from-red-950/20 to-slate-900/20 py-20 border-b border-red-500/10">
         <div className="container mx-auto px-6 text-center">
           <div className="mb-8">
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-              alt="Фото профиля"
-              className="w-32 h-32 rounded-full mx-auto mb-6 shadow-xl"
-            />
+            <div className="w-32 h-32 rounded-full mx-auto mb-6 bg-gradient-to-br from-red-600 to-red-800 shadow-2xl shadow-red-500/25 flex items-center justify-center">
+              <span className="text-4xl">⚔️</span>
+            </div>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Привет! Я <span className="text-primary">разработчик</span>
+          <h2 className="text-5xl font-bold text-white mb-6">
+            Привет! Я <span className="text-red-400 animate-pulse">Стас</span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Создаю современные веб-приложения и мобильные решения.
-            Специализируюсь на React, TypeScript и Node.js разработке.
+          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            Fullstack разработчик с острым взглядом на код. Создаю надежные
+            цифровые решения, которые выдерживают любые нагрузки.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" className="animate-fade-in">
+            <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-red-500/25">
               Посмотреть проекты
-            </Button>
-            <Button variant="outline" size="lg">
+            </button>
+            <button className="border border-red-400 text-red-400 hover:bg-red-400 hover:text-black px-8 py-3 rounded-lg font-semibold transition-all">
               Скачать CV
-            </Button>
+            </button>
           </div>
         </div>
       </section>
